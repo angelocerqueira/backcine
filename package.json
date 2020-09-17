@@ -11,7 +11,8 @@
     "sequelize": "^6.3.5"
   },
   "scripts": {
-    "build": "",
+    "start": "node dist/server.js",
+    "build": "sucrase ./src -d ./dist --transforms imports",
     "dev": "nodemon src/server.js"
   },
   "devDependencies": {
